@@ -7,6 +7,5 @@ popd
 
 pnpm install
 
+rm -rf ./tmp/vscode/.eslintrc.json
 rm -rf ./tmp/vscode/**/.eslintrc.json
-
-cargo build --release -p oxc_cli

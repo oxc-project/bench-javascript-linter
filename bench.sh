@@ -2,7 +2,7 @@
 
 TEST_DIR="./tmp/vscode/src"
 
-OXC="../target/release/oxc_cli lint ${TEST_DIR}"
+OXC="./node_modules/.bin/oxlint ${TEST_DIR}"
 
 ESLINT="./node_modules/.bin/eslint -c .eslintrc.json ${TEST_DIR}"
 

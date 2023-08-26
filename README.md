@@ -1,31 +1,32 @@
-# Benchmarks
+# Benchmark for Oxc vs ESLint
 
-This benchmark does not compare against Rome because the rules do not match.
+This benchmark only compares with ESLint and does not compare against Rome because the rules do not match.
 
-## Initialize
+## Input
 
-```bash
-./init.sh
-```
-
-## Bench
-
-```bash
-./bench.sh
-```
+* uses the `vscode/src` directory, which contains 3684 files to lint
+* See .eslintrc.json for ESLint configuration.
+* @typescript-eslint is required for TypeScript
 
 ## Results
 
-The benchmark uses the `vscode/src` directory, which contains 3629 lintable files.
+### Mac M2 8 cores
 
-### Single Run
+58 times faster than ESLint.
 
-Using the shell `time` command for cpu utilization
+```
+Benchmark 1: oxc
+  Time (mean ± σ):     424.0 ms ±   2.2 ms    [User: 2243.9 ms, System: 373.6 ms]
+  Range (min … max):   420.9 ms … 427.0 ms    10 runs
 
-* oxc: 638% cpu
-* ESLint: 161% cpu
+Benchmark 2: eslint
+  Time (mean ± σ):     24.904 s ±  0.624 s    [User: 40.804 s, System: 1.691 s]
+  Range (min … max):   24.292 s … 26.469 s    10 runs
 
-### Hyperfine
+Summary
+  'oxc' ran
+   58.73 ± 1.50 times faster than 'eslint'
+```
 
 ## Intel i7 6-cores
 
@@ -43,26 +44,6 @@ Summary
   137.70 ± 8.28 times faster than 'eslint'
 ```
 
-## M2 8-cores
-
-```
-Benchmark 1: oxc
-  Time (mean ± σ):     297.0 ms ±  31.7 ms    [User: 1772.3 ms, System: 205.7 ms]
-  Range (min … max):   269.8 ms … 379.7 ms    10 runs
-
-  Warning: Ignoring non-zero exit code.
-
-Benchmark 2: eslint
-  Time (mean ± σ):     22.722 s ±  0.470 s    [User: 39.437 s, System: 1.705 s]
-  Range (min … max):   22.177 s … 23.805 s    10 runs
-
-  Warning: Ignoring non-zero exit code.
-
-Summary
-  'oxc' ran
-   76.50 ± 8.32 times faster than 'eslint'
-```
-
 ## AMD 5800H 8-cores
 
 ```
@@ -70,15 +51,18 @@ Benchmark 1: oxc
   Time (mean ± σ):     239.6 ms ±   2.3 ms    [User: 3113.7 ms, System: 153.3 ms]
   Range (min … max):   236.8 ms … 244.1 ms    10 runs
 
-  Warning: Ignoring non-zero exit code.
-
 Benchmark 2: eslint
   Time (mean ± σ):      16.318 s ±  0.566 s   [User: 16.324 s, System: 0.723 s]
   Range (min … max):    15.624 s … 16.965 s   10 runs
 
-  Warning: Ignoring non-zero exit code.
-
 Summary
   oxc ran
    68.09 ± 2.45 times faster than eslint
+```
+
+## Run
+
+```bash
+./init.sh
+./bench.sh
 ```
