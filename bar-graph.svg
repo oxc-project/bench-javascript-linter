@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg overflow="hidden" aria-label="A chart." viewBox="0 0 600 390" xmlns="http://www.w3.org/2000/svg">
+<rect width="600" height="390" fill="#fff" stroke-width="0"/>
+<g stroke-width="0">
+<text x="115" y="52.05" fill="#000000" font-family="Arial" font-size="13" font-weight="bold">Linter Benchmark</text>
+<rect x="115" y="41" width="371" height="13" fill="#fff" fill-opacity="0"/>
+</g>
+<rect x="499" y="75" width="88" height="34" fill="#fff" fill-opacity="0" stroke-width="0"/>
+<rect x="499" y="75" width="88" height="13" fill="#fff" fill-opacity="0" stroke-width="0"/>
+<text x="530" y="86.05" fill="#222222" font-family="Arial" font-size="13" stroke-width="0">oxc</text>
+<rect x="499" y="75" width="26" height="13" fill="#33bacc" stroke-width="0"/>
+<rect x="499" y="96" width="88" height="13" fill="#fff" fill-opacity="0" stroke-width="0"/>
+<text x="530" y="107.05" fill="#222222" font-family="Arial" font-size="13" stroke-width="0">eslint</text>
+<rect x="499" y="96" width="26" height="13" fill="#542de1" stroke-width="0"/>
+<rect x="115" y="75" width="371" height="241" fill="#fff" fill-opacity="0" stroke-width="0"/>
+<g clip-path="url(https://www.rapidtables.com/tools/bar-graph.html#_ABSTRACT_RENDERER_ID_354)">
+<g stroke-width="0">
+<rect x="115" y="75" width="1" height="241" fill="#ccc"/>
+<rect x="189" y="75" width="1" height="241" fill="#ccc"/>
+<rect x="263" y="75" width="1" height="241" fill="#ccc"/>
+<rect x="337" y="75" width="1" height="241" fill="#ccc"/>
+<rect x="411" y="75" width="1" height="241" fill="#ccc"/>
+<rect x="485" y="75" width="1" height="241" fill="#ccc"/>
+<rect x="152" y="75" width="1" height="241" fill="#ebebeb"/>
+<rect x="226" y="75" width="1" height="241" fill="#ebebeb"/>
+<rect x="300" y="75" width="1" height="241" fill="#ebebeb"/>
+<rect x="374" y="75" width="1" height="241" fill="#ebebeb"/>
+<rect x="448" y="75" width="1" height="241" fill="#ebebeb"/>
+</g>
+<g stroke-width="0">
+<rect x="116" y="121" width="5" height="74" fill="#33bacc"/>
+<rect x="116" y="196" width="368" height="74" fill="#542de1"/>
+</g>
+<rect x="115" y="75" width="1" height="241" fill="#333" stroke-width="0"/>
+</g>
+<text x="115.5" y="335.05" fill="#444444" font-family="Arial" font-size="13" stroke-width="0" text-anchor="middle">0</text>
+<text x="189.5" y="335.05" fill="#444444" font-family="Arial" font-size="13" stroke-width="0" text-anchor="middle">5</text>
+<text x="263.5" y="335.05" fill="#444444" font-family="Arial" font-size="13" stroke-width="0" text-anchor="middle">10</text>
+<text x="337.5" y="335.05" fill="#444444" font-family="Arial" font-size="13" stroke-width="0" text-anchor="middle">15</text>
+<text x="411.5" y="335.05" fill="#444444" font-family="Arial" font-size="13" stroke-width="0" text-anchor="middle">20</text>
+<text x="485.5" y="335.05" fill="#444444" font-family="Arial" font-size="13" stroke-width="0" text-anchor="middle">25</text>
+<text x="102" y="200.05" fill="#222222" font-family="Arial" font-size="13" stroke-width="0" text-anchor="end">oxc</text>
+<g stroke-width="0">
+<text x="300.5" y="368.05" fill="#222222" font-family="Arial" font-size="13" font-style="italic" text-anchor="middle">seconds</text>
+<rect x="115" y="357" width="371" height="13" fill="#fff" fill-opacity="0"/>
+</g>
+</svg>

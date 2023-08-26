@@ -14,6 +14,8 @@ This benchmark only compares with ESLint and does not compare against Rome becau
 
 58 times faster than ESLint.
 
+<img src="./bar-graph.svg">
+
 ```
 Benchmark 1: oxc
   Time (mean ± σ):     424.0 ms ±   2.2 ms    [User: 2243.9 ms, System: 373.6 ms]
