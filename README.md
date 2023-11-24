@@ -1,6 +1,6 @@
 # Benchmark for Oxc vs ESLint
 
-This benchmark only compares with ESLint and does not compare against Rome because the rules do not match.
+This benchmark only compares with ESLint and does not compare against [Biome](https://biomejs.dev) because the rules do not match.
 
 ## Input
 
