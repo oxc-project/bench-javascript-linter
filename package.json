@@ -8,6 +8,6 @@
     "@typescript-eslint/parser": "6.4.1",
     "eslint": "8.48.0",
     "typescript": "5.2.2",
-    "oxlint": "0.0.10"
+    "oxlint": "0.9.1"
   }
 }
