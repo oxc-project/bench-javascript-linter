@@ -62,6 +62,21 @@ Summary
    68.09 ± 2.45 times faster than eslint
 ```
 
+## 13th Gen Intel(R) i9-13980HX 24-cores (8p / 16e) 
+```
+Benchmark 1: oxc
+  Time (mean ± σ):      28.7 ms ±   3.0 ms    [User: 13.3 ms, System: 20.6 ms]
+  Range (min … max):    23.1 ms …  44.3 ms    119 runs
+
+Benchmark 2: eslint
+  Time (mean ± σ):     374.9 ms ±   3.9 ms    [User: 416.3 ms, System: 67.2 ms]
+  Range (min … max):   367.6 ms … 382.5 ms    10 runs
+
+Summary
+  'oxc' ran
+   13.07 ± 1.38 times faster than 'eslint'
+```
+
 ## Run
 
 ```bash
