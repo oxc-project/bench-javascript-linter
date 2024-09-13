@@ -77,6 +77,24 @@ Summary
    13.07 ± 1.38 times faster than 'eslint'
 ```
 
+## Intel core i5-4590
+
+```
+Benchmark 1: oxc
+  Time (mean ± σ):      1.197 s ±  0.065 s    [User: 3.590 s, System: 0.273 s]
+  Range (min … max):    1.147 s …  1.314 s    10 runs
+
+  Warning: Ignoring non-zero exit code.
+
+Benchmark 2: eslint
+  Time (mean ± σ):     82.076 s ±  5.129 s    [User: 126.155 s, System: 3.591 s]
+  Range (min … max):   77.457 s … 91.170 s    10 runs
+
+Summary
+  'oxc' ran
+   71.68 ± 4.81 times faster than 'eslint'
+```
+
 ## Run
 
 ```bash
