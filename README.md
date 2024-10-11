@@ -12,7 +12,7 @@ Oxlint is 50x - 100x faster than ESLint depending on the number of CPU cores.
 * See .eslintrc.json for ESLint configuration.
 * @typescript-eslint is required for TypeScript
 
-## Results
+## Results for eslint v8
 
 ### Mac M2 8 cores
 
@@ -97,6 +97,48 @@ Benchmark 2: eslint
 Summary
   'oxc' ran
    71.68 ± 4.81 times faster than 'eslint'
+```
+
+### Mac m1 10 Cores (8 performance and 2 efficiency)
+
+```
+Benchmark 1: oxc ./node_modules/.bin/oxlint ./tmp/vscode/src
+  Time (mean ± σ):     584.6 ms ±  11.5 ms    [User: 3640.2 ms, System: 196.4 ms]
+  Range (min … max):   573.8 ms … 612.2 ms    10 runs
+ 
+  Warning: Ignoring non-zero exit code.
+ 
+Benchmark 2: eslint ./node_modules/.bin/eslint -c .eslintrc.json ./tmp/vscode/src
+  Time (mean ± σ):     33.316 s ±  0.478 s    [User: 50.109 s, System: 2.097 s]
+  Range (min … max):   32.560 s … 34.375 s    10 runs
+ 
+  Warning: Ignoring non-zero exit code.
+ 
+Summary
+  oxc ran
+   56.99 ± 1.39 times faster than eslint
+```
+
+## Results for eslint v9
+
+### Mac m1 10 Cores (8 performance and 2 efficiency)
+
+```
+Benchmark 1: oxc
+  Time (mean ± σ):     615.3 ms ±  30.4 ms    [User: 3613.8 ms, System: 195.5 ms]
+  Range (min … max):   583.7 ms … 677.1 ms    10 runs
+ 
+  Warning: Ignoring non-zero exit code.
+ 
+Benchmark 2: eslint
+  Time (mean ± σ):     33.481 s ±  0.453 s    [User: 51.682 s, System: 2.329 s]
+  Range (min … max):   32.861 s … 34.085 s    10 runs
+ 
+  Warning: Ignoring non-zero exit code.
+ 
+Summary
+  oxc ran
+   54.42 ± 2.78 times faster than eslint
 ```
 
 ## Run

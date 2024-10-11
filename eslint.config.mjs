@@ -1,11 +1,16 @@
-{
-    "root": true,
-    "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint"],
-    "overrides": [{
-        "files": ["*.js", "*.ts", "*.tsx", "*.mts", "*.cts"]
-    }],
-    "rules": {
+import typescriptEslint from "@typescript-eslint/eslint-plugin";
+import tsParser from "@typescript-eslint/parser";
+
+export default [{
+    plugins: {
+        "@typescript-eslint": typescriptEslint,
+    },
+
+    languageOptions: {
+        parser: tsParser,
+    },
+
+    rules: {
         "for-direction": "error",
         "no-async-promise-executor": "error",
         "no-caller": "error",
@@ -53,6 +58,8 @@
         "@typescript-eslint/no-misused-new": "error",
         "@typescript-eslint/no-this-alias": "error",
         "@typescript-eslint/no-namespace": "error",
-        "@typescript-eslint/prefer-as-const": "error"
-    }
-}
+        "@typescript-eslint/prefer-as-const": "error",
+    },
+}, {
+    files: ["**/*.js", "**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
+}];
