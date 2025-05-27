@@ -12,67 +12,48 @@ See [bench.sh](./bench.sh).
 
 ## Oxlint vs Biome
 
-### MacBook Pro M3 Max
+### MacBook Pro M2 Max
 
 ```
 Benchmark 1: oxc
-  Time (mean ± σ):     124.5 ms ±   1.9 ms    [User: 628.0 ms, System: 287.3 ms]
-  Range (min … max):   122.4 ms … 130.1 ms    23 runs
+  Time (mean ± σ):     138.6 ms ±   2.1 ms    [User: 673.9 ms, System: 163.2 ms]
+  Range (min … max):   133.9 ms … 143.2 ms    20 runs
 
   Warning: Ignoring non-zero exit code.
 
 Benchmark 2: biome
-  Time (mean ± σ):     297.4 ms ±   2.6 ms    [User: 2259.5 ms, System: 724.6 ms]
-  Range (min … max):   292.0 ms … 301.2 ms    10 runs
+  Time (mean ± σ):     377.2 ms ±   6.3 ms    [User: 2827.2 ms, System: 340.6 ms]
+  Range (min … max):   372.0 ms … 393.9 ms    10 runs
 
   Warning: Ignoring non-zero exit code.
 
 Summary
   oxc ran
-    2.39 ± 0.04 times faster than biome
+    2.72 ± 0.06 times faster than biome
 ```
 
 ## Oxlint vs ESLint v9
 
-### Mac m1 10 Cores (8 performance and 2 efficiency)
+### MacBook Pro M2 Max 12 Cores (8 performance and 4 efficiency)
 
 ```
 Benchmark 1: oxc
-  Time (mean ± σ):     615.3 ms ±  30.4 ms    [User: 3613.8 ms, System: 195.5 ms]
-  Range (min … max):   583.7 ms … 677.1 ms    10 runs
+  Time (mean ± σ):     515.3 ms ±  10.6 ms    [User: 2482.4 ms, System: 178.3 ms]
+  Range (min … max):   495.4 ms … 527.7 ms    10 runs
 
   Warning: Ignoring non-zero exit code.
 
 Benchmark 2: eslint
-  Time (mean ± σ):     33.481 s ±  0.453 s    [User: 51.682 s, System: 2.329 s]
-  Range (min … max):   32.861 s … 34.085 s    10 runs
+  Time (mean ± σ):     32.700 s ±  0.411 s    [User: 49.685 s, System: 2.872 s]
+  Range (min … max):   32.073 s … 33.470 s    10 runs
 
   Warning: Ignoring non-zero exit code.
 
 Summary
   oxc ran
-   54.42 ± 2.78 times faster than eslint
+   63.46 ± 1.53 times faster than eslint
 ```
 
-### 13th Gen Intel(R) i9-13980HX 24-cores (8p / 16e)
-
-```
-Benchmark 1: oxc
-  Time (mean ± σ):     458.9 ms ±   5.4 ms    [User: 5493.4 ms, System: 182.0 ms]
-  Range (min … max):   449.5 ms … 465.2 ms    10 runs
-
-  Warning: Ignoring non-zero exit code.
-
-Benchmark 2: eslint
-  Time (mean ± σ):     32.092 s ±  0.567 s    [User: 47.377 s, System: 2.207 s]
-  Range (min … max):   30.967 s … 32.752 s    10 runs
-
-  Warning: Ignoring non-zero exit code.
-
-Summary
-  oxc ran
-   69.93 ± 1.49 times faster than eslint
-```
 ## Run
 
 ```bash
