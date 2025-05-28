@@ -7,9 +7,9 @@ TEST_DIR="./tmp/vscode/src"
 OXC="./node_modules/.bin/oxlint -A all -D debugger ${TEST_DIR}"
 BIOME="./node_modules/.bin/biome lint --only=suspicious/noDebugger ${TEST_DIR}"
 
-# hyperfine -w 1 -i \
-#   -n oxc "${OXC}" \
-#   -n biome "${BIOME}"
+hyperfine -w 1 -i \
+  -n oxc "${OXC}" \
+  -n biome "${BIOME}"
 
 # Compare to eslint with a set of js and ts rules.
 
@@ -18,4 +18,6 @@ ESLINT="./node_modules/.bin/eslint -c eslint.config.mjs ${TEST_DIR}"
 
 hyperfine -w 1 -i \
   -n oxc "${OXC}" \
+  -n oxc-single-thread "${OXC} --threads=1" \
   -n eslint "${ESLINT}"
+  

@@ -38,20 +38,27 @@ Summary
 
 ```
 Benchmark 1: oxc
-  Time (mean ± σ):     515.3 ms ±  10.6 ms    [User: 2482.4 ms, System: 178.3 ms]
-  Range (min … max):   495.4 ms … 527.7 ms    10 runs
+  Time (mean ± σ):     499.6 ms ±   9.0 ms    [User: 2485.7 ms, System: 165.2 ms]
+  Range (min … max):   489.6 ms … 516.1 ms    10 runs
 
   Warning: Ignoring non-zero exit code.
 
-Benchmark 2: eslint
-  Time (mean ± σ):     32.700 s ±  0.411 s    [User: 49.685 s, System: 2.872 s]
-  Range (min … max):   32.073 s … 33.470 s    10 runs
+Benchmark 2: oxc-single-thread
+  Time (mean ± σ):      1.824 s ±  0.035 s    [User: 2.079 s, System: 0.134 s]
+  Range (min … max):    1.789 s …  1.903 s    10 runs
+
+  Warning: Ignoring non-zero exit code.
+
+Benchmark 3: eslint
+  Time (mean ± σ):     31.025 s ±  0.744 s    [User: 48.279 s, System: 2.224 s]
+  Range (min … max):   30.556 s … 33.030 s    10 runs
 
   Warning: Ignoring non-zero exit code.
 
 Summary
   oxc ran
-   63.46 ± 1.53 times faster than eslint
+    3.65 ± 0.10 times faster than oxc-single-thread
+   62.10 ± 1.86 times faster than eslint
 ```
 
 ## Run
