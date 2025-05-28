@@ -13,9 +13,11 @@ hyperfine -w 1 -i \
 
 # Compare to eslint with a set of js and ts rules.
 
-OXC="./node_modules/.bin/oxlint -c oxlint.json ${TEST_DIR}"
+OXC="./node_modules/.bin/oxlint -c .oxlintrc.json ${TEST_DIR}"
 ESLINT="./node_modules/.bin/eslint -c eslint.config.mjs ${TEST_DIR}"
 
 hyperfine -w 1 -i \
   -n oxc "${OXC}" \
+  -n oxc-single-thread "${OXC} --threads=1" \
   -n eslint "${ESLINT}"
+  
