@@ -5,10 +5,10 @@
   "private": true,
   "devDependencies": {
     "@biomejs/biome": "^2.0.4",
-    "@typescript-eslint/eslint-plugin": "^8.34.0",
-    "@typescript-eslint/parser": "^8.34.0",
+    "@typescript-eslint/eslint-plugin": "^8.34.1",
+    "@typescript-eslint/parser": "^8.34.1",
     "eslint": "^9.29.0",
-    "oxlint": "^1.1.0",
+    "oxlint": "^1.2.0",
     "typescript": "^5.8.3"
   }
 }
