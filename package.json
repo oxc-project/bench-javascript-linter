@@ -4,11 +4,11 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "@biomejs/biome": "^2.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.42.0",
-    "@typescript-eslint/parser": "^8.42.0",
+    "@biomejs/biome": "^2.2.4",
+    "@typescript-eslint/eslint-plugin": "^8.43.0",
+    "@typescript-eslint/parser": "^8.43.0",
     "eslint": "^9.35.0",
-    "oxlint": "^1.14.0",
+    "oxlint": "^1.15.0",
     "typescript": "^5.9.2"
   }
 }
