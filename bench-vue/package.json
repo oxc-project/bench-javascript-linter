@@ -1,0 +1,7 @@
+{
+  "name": "bench-vue",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "description": "Benchmark for Vue Core codebase with type-aware linting rules"
+}

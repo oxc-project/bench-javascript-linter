@@ -1,0 +1,7 @@
+{
+  "name": "bench-vscode",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "description": "Benchmark for VSCode codebase with standard linting rules"
+}

@@ -1,5 +1,9 @@
 # Benchmark for Oxc, Biome and ESLint
 
+This repository contains two separate benchmarks:
+- **bench-vscode**: Benchmarks on VSCode codebase with standard linting rules
+- **bench-vue**: Benchmarks on Vue Core codebase with type-aware linting rules
+
 ## Summary
 
 Oxlint is 50x - 100x faster than ESLint depending on the number of CPU cores.
@@ -8,9 +12,13 @@ Oxlint is ~2x faster than Biome.
 
 ## Setup
 
-See [bench.sh](./bench.sh).
+Each benchmark is in its own directory:
+- [bench-vscode](./bench-vscode) - VSCode codebase benchmarks
+- [bench-vue](./bench-vue) - Vue Core codebase benchmarks
 
-## Oxlint vs Biome
+## VSCode Benchmark Results
+
+### Oxlint vs Biome
 
 ### MacBook Pro M2 Max
 
@@ -73,7 +81,7 @@ Summary
     3.31 ± 0.07 times faster than biome
 ```
 
-## Oxlint vs ESLint v9
+### Oxlint vs ESLint v9
 
 ### MacBook Pro M2 Max 12 Cores (8 performance and 4 efficiency)
 
@@ -149,9 +157,36 @@ Summary
    60.09 ± 1.73 times faster than eslint
 ```
 
+## Vue Core Benchmark Results
+
+### Type-Aware Rules Performance
+
+Oxlint with type-aware rules vs TypeScript ESLint on Vue Core codebase.
+
+(Benchmark results to be added after running)
+
 ## Run
 
+### Run all benchmarks
+
 ```bash
+# Initialize repos and dependencies
 ./init.sh
+
+# Run all benchmarks
+./bench-all.sh
+```
+
+### Run individual benchmarks
+
+#### VSCode benchmark
+```bash
+cd bench-vscode
+./bench.sh
+```
+
+#### Vue benchmark
+```bash
+cd bench-vue
 ./bench.sh
 ```
